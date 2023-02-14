@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    app:cardCornerRadius="10dp"
+    android:layout_margin="5dp"
+    android:elevation="50dp"
+    android:background="@drawable/bg_cardview"
+
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+
+            >
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/userImg"
+                android:layout_marginStart="10dp"
+                android:padding="3dp"
+                app:civ_border_color="#D50000"
+                app:civ_border_width="3dp"
+                android:src="@drawable/ic_launcher_background"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/userNameTxt"
+                android:text="text"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="13dp"
+                />
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                >
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/settingsImg"
+                    android:layout_marginTop="8dp"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/menu2_img"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="5dp"
+                    />
+            </RelativeLayout>
+
+
+        </LinearLayout>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="190dp"
+            android:id="@+id/uploadImg"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <ImageView
+
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:id="@+id/likeImg"
+                android:src="@drawable/like"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="3dp"
+
+    />
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:id="@+id/commentImg"
+                android:src="@drawable/comment"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="3dp"
+                />
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:id="@+id/shareImg"
+                android:src="@drawable/share"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="3dp"
+                />
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    >
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:id="@+id/saveImg"
+        android:src="@drawable/save"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="3dp"
+        />
+</RelativeLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+</androidx.cardview.widget.CardView>
